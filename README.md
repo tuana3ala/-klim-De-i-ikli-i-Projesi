@@ -5,7 +5,6 @@
 ### 🌱 Günlük Bilgi Aktarımı 🌱
 * Bot, kullanıcıya her gün iklim değişikliği hakkında yeni bir bilgi gönderir.
 * Örneğin = "Biliyor muydunuz? Sadece bir hamburger uretimi için 2.500 litre su harcanıyor. Bu miktar, 90 dakikalık bir duş süresine eşittir."
-* Ayrıca bu bilgin yannında bu bilgi ile ilgili bir görsel gönderilir.
 ### ❓ Soru-Cevap ❓
 * Bot, kullanıcılara konu hakkında bilgi edinmesi amacı ile yaptığı bir quiz.
 * Örneğin = "Hangi sera gazı en çok küresel ısınmaya neden olur? A) Metan B) Karbondioksit C) Azon Oksit"
@@ -28,3 +27,5 @@
 * Kullanıcılar günlük görevlerini yaptıklarında, sanal puan verilir ( her görev 20 puan ).
 * Kullanıcılar belirli puanlara geldiklerinde rozetler verilir ( örneğin " 100 Puan Rozeti " ).
 * Bot, kullanıcıları puanlar ve rozetler ile ödüllendirerek motivasyonlarını artırarak progranın sürerliliğini sağlamış oluruz.
+### 🖼️ Görsel 🖼️
+* Bot kullanıcılara görsel ile ilgili görseller, rotoraflar veya çizimler gösterir.
