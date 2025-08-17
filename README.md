@@ -14,7 +14,7 @@
 * Örneğin = "Plastik Şişelerden Saksı veya Kalemlik: Boş plastik şişelerin üst kısmını kesip içini boyayarak veya süsleyerek sevimli birer saksı ya da kalemliğe dönüştürebilirsiniz."
 * Bu ipuçlarının daha etkili olabilmesi için yanında görsel veya video gönderir.
 ### 🌍 Kişisel Takip 🌍
-* Kullanıcının yaşam tarzı hakkında sorular sorarak günlük, haftalık ve aylık ne kadar enerji harcadığını gösterir.
+* Kullanıcı her gün ne kadar su ve elektrik kullandığının bilgisini bota verir bot uygulamayı kullanmaya başladığından beri ne kadar su ve elektrik kullandığını gösterir.
 ### 🔍 Bireysel Öneriler 🔍
 * Bot, kullanıcıların günlük hayatlarında yapabilecekleri küçük değişikliklerle iklim değişikliğiyle mücadeleye nasıl katkıda bulunabilecekleri konusunda pratik öneriler verir.
 * Örneğin = "Plastik kullanımını azaltmak için tekrar kullanılabilir su şişesi taşıyın."
@@ -23,9 +23,8 @@
 * Örneğin =  "Bugün dışarı çıkarken bir toplu taşıma aracı kullan veya yürüyerek ya da bisikletle git. Arabanı bir günlüğüne kullanma."
 * Kullanıcılar bu görevleri tamamladıklarında onlara sanal puanlar verilir.
 ### 🏆 Ödüllendirmeler 🏆
-* Kullanıcılara bir soruyu doğru bildiklerinde, sanal puanlar verilir, puanlar sorunun zorluk derecesine göre değişir ( kolay - 5 puan / orta - 10 puan / zor - 15 ).
+* Kullanıcılara bir soruyu doğru bildiklerinde, sanal puanlar verilir.
 * Kullanıcılar günlük görevlerini yaptıklarında, sanal puan verilir ( her görev 20 puan ).
-* Kullanıcılar belirli puanlara geldiklerinde rozetler verilir ( örneğin " 100 Puan Rozeti " ).
-* Bot, kullanıcıları puanlar ve rozetler ile ödüllendirerek motivasyonlarını artırarak progranın sürerliliğini sağlamış oluruz.
+* Bot, kullanıcıları puanlar ile ödüllendirerek motivasyonlarını artırarak programın sürerliliğini sağlamış oluruz.
 ### 🖼️ Görsel 🖼️
 * Bot kullanıcılara görsel ile ilgili görseller, rotoraflar veya çizimler gösterir.
