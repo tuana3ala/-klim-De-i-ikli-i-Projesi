@@ -31,6 +31,12 @@ async def bilgi_gonder(ctx):
     bilgi=random.choice(veri_listesi)
     await ctx.send(bilgi)
 
+async def puan_ekle(ctx, puan):
+    kullanici_id = ctx.author.id  # Kullanıcının ID'sini alıyoruz
+    if kullanici_id not in kullanici_puanlari:
+        kullanici_puanlari[kullanici_id] = 0  # Eğer kullanıcı yoksa, puanları 0'dan başlatıyoruz
+    kullanici_puanlari[kullanici_id] += puan  # Puanı ekliyoruz
+    await ctx.send(f"{ctx.author.name} size {puan} kadar puan ekledi. Şuan toplam puanınız: {kullanici_puanlari[kullanici_id]}")
 
 
 # Çevre Dostu Sorular & Cevaplar (Quiz)
@@ -53,6 +59,7 @@ async def cevre_sorusu(ctx):
         cevap = await bot.wait_for("message", check=check, timeout=30)
         if cevap.content.lower() == dogru_cevap.lower():
             await ctx.send("Tebrikler, doğru cevap!")
+            puan_ekle(ctx, 5)
         else:
             await ctx.send(f"Yanlış cevap. Doğru cevap: {dogru_cevap}")
     except TimeoutError:
@@ -79,7 +86,7 @@ async def cevre_gorevi(ctx):
     ]
     gorev = random.choice(gorevler)
     await ctx.send(f"Bugünün çevre görevi: {gorev}")
-
+    puan_ekle(ctx, 10)
 # Günlük bilgi aktarımı
 @bot.command()
 async def bilgi_aktarımı(ctx):
@@ -103,8 +110,7 @@ async def bilgi_aktarımı(ctx):
     ]
     bilgi = random.choice(bilgiler)
     await ctx.send(f"Bu bilgiyi biliyor muydunuz???{bilgi}")
-    
-# Günlük görevleri
+
 @bot.command()
 async def gunluk_gorevler(ctx):
     görevler = [
@@ -115,7 +121,7 @@ async def gunluk_gorevler(ctx):
     görev = random.choice(görevler)
     await ctx.send(f"Bugün bu görevi yapmayı unutma: {görev}")
 
-    puan_ekle(ctx.author.id, 20)
+    puan_ekle(ctx, 20)
 
 @bot.command()
 async def gorseller(ctx):
@@ -141,20 +147,12 @@ async def gorseller(ctx):
 @bot.command()
 async def su_ekle(ctx, miktar: int):
     """Kullanıcı su kullanım miktarını ekler."""
-    kullanici_id = str(ctx.author.id)
     try:
         miktar = int(miktar)
         await ctx.send(f"Toplam {miktar} kadar su kullandınız.")
     except:
         await ctx.send("Lütfen geçerli bir sayı girin. Örneğin = !su_ekle 5 ")
         return
-    puan_ekle(ctx, kullanici_id, puan)
-
-async def puan_ekle(ctx, kullanici_id, puan):
-    if kullanici_id not in kullanici_puanlari:
-        kullanici_puanlari[kullanici_id] = 0
-        kullanici_puanlari[kullanici_id] += puan 
-        await ctx.send(f"{kullanici_id} size {puan} kadar puan ekledi. Şuan toplam puanınız ={kullanici_puanlari[kullanici_id]}")
 
 @bot.command()
 async def puan(ctx):
