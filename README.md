@@ -14,7 +14,7 @@
 * Örneğin = "Plastik Şişelerden Saksı veya Kalemlik: Boş plastik şişelerin üst kısmını kesip içini boyayarak veya süsleyerek sevimli birer saksı ya da kalemliğe dönüştürebilirsiniz."
 * Bu ipuçlarının daha etkili olabilmesi için yanında görsel veya video gönderir.
 ### 🌍 Kişisel Takip 🌍
-* Kullanıcı her gün ne kadar su ve elektrik kullandığının bilgisini bota verir bot uygulamayı kullanmaya başladığından beri ne kadar su ve elektrik kullandığını gösterir.
+* Kullanıcı her gün ne kadar su kullandığının bilgisini bota verir bot uygulamayı kullanmaya başladığından beri ne kadar su ve elektrik kullandığını gösterir.
 ### 🔍 Bireysel Öneriler 🔍
 * Bot, kullanıcıların günlük hayatlarında yapabilecekleri küçük değişikliklerle iklim değişikliğiyle mücadeleye nasıl katkıda bulunabilecekleri konusunda pratik öneriler verir.
 * Örneğin = "Plastik kullanımını azaltmak için tekrar kullanılabilir su şişesi taşıyın."
